@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
+@Profile("manual")
 public class EventDaoImpl implements EventDao {
     List<Event> eventList;
 
