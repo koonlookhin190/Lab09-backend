@@ -9,7 +9,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import se331.rest.entity.Event;
+import se331.rest.entity.Organizer;
 import se331.rest.service.EventService;
+import se331.rest.service.OrganizerService;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
@@ -55,6 +57,8 @@ public class EventController {
         Event output = eventService.save(event);
         return ResponseEntity.ok(event);
     }
+
+
 }
 
 
